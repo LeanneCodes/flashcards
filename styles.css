@@ -1,0 +1,113 @@
+/* Page base styling */
+body {
+    background: #f4f4f4;
+    font-family: 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(roads.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.85;
+}
+  
+/* Title styling */
+#heading {
+    font-size: clamp(2rem, 5vw, 8rem); /* Scales from 32px to 80px */
+    margin: 2rem 1rem 0rem;
+    color: white;
+}
+
+#subheading {
+    font-size: clamp(1rem, 5vw, 4rem);
+    color: white;
+    margin-top: 0;
+}
+
+/* Container for flashcards */
+#container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem;
+    max-width: 3094px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Flashcard outer shell */
+.flashcard {
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    width: clamp(250px, 45vw, 400px);
+    height: clamp(250px, 45vh, 500px);
+    perspective: 1000px;
+    overflow: hidden;
+}
+
+/* Inner card for flip effect */
+.flashcard-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 1s ease;
+    transform-style: preserve-3d;
+}
+
+/* Flip on hover (desktop) */
+.flashcard:hover .flashcard-inner {
+    transform: rotateY(180deg);
+}
+
+/* Common face styling */
+.card-front,
+.card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+/* Front face */
+.card-front {
+    background: #ffffff;
+    color: #333;
+}
+
+/* Back face */
+.card-back {
+    background: #4CAF50;
+    color: #ffffff;
+    transform: rotateY(180deg);
+}
+
+/* Question and answer text */
+.question, .answer {
+    font-size: clamp(1rem, 2.5vw, 2rem); /* Scales responsively */
+    padding: 0 1rem;
+    line-height: 1.5;
+}
+
+/* Aesthetic transitions */
+.flashcard,
+.card-front,
+.card-back {
+    transition: box-shadow 0.3s ease, background 0.3s ease;
+}
+
+.flashcard:hover {
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
