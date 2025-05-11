@@ -1,5 +1,7 @@
 # 🚗 Driving Test Flashcards: Show Me, Tell Me
 
+DVSA official questions and answers (at the time this project was made: 11th May, 2025)
+
 This project is designed to help learner drivers **confidently prepare** for the **'Show Me, Tell Me'** safety questions asked during the UK practical driving test.
 
 ## 🎯 Purpose
@@ -10,10 +12,14 @@ The DVSA examiner will ask you:
 
 These flashcards are a simple, interactive way to revise and **test yourself** on the 21 official questions, making sure you're well-prepared and stress-free on test day.
 
+![](flashcards.png)
+[Live link here](https://leannecodes.github.io/flashcards/)
+
 ## 💡 Features
 
 - Responsive flip-style flashcards for both "Show Me" and "Tell Me" questions
-- Clean, accessible design with a subtle background to reduce visual distraction
+- Simply tap or click on the flashcard, and reveal the answer. Tap or click again, to see the question
+- Clean, accessible design with a simple background to reduce visual distraction
 - Works on all screen sizes, from phones to desktops
 
 ## 📚 What You’ll Learn
