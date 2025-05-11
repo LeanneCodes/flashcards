@@ -117,3 +117,13 @@ if (questionsAnswers.length > 0) {
         container.appendChild(flashcard);
     }
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+  const flashcards = document.querySelectorAll(".flashcard");
+
+  flashcards.forEach(card => {
+      card.addEventListener("click", function () {
+          this.classList.toggle("flipped");
+      });
+  });
+});

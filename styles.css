@@ -1,6 +1,6 @@
 /* Page base styling */
 body {
-    background: #f4f4f4;
+    background: rgb(0,121,193);
     font-family: 'Helvetica Neue', sans-serif;
     margin: 0;
     padding: 0;
@@ -8,11 +8,6 @@ body {
     flex-direction: column;
     align-items: center;
     min-height: 100vh;
-    background-image: url(roads.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    opacity: 0.85;
 }
   
 /* Title styling */
@@ -61,7 +56,7 @@ body {
 }
 
 /* Flip on hover (desktop) */
-.flashcard:hover .flashcard-inner {
+.flashcard.flipped .flashcard-inner {
     transform: rotateY(180deg);
 }
 
